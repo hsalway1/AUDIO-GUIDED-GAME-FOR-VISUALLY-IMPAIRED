@@ -1,0 +1,20 @@
+@import url('http://fonts.cdnfonts.com/css/games');
+
+body, html{
+    background-color: #eaf0d1;
+    height : 99%;
+    font-family: 'Games', sans-serif;
+    overflow-y: hidden;
+}
+
+#canvas{
+    border : 2px solid black;
+    height : 85%;
+    width :  75%;
+    transform: translate(12.5%, 0);
+    box-shadow: 7px 7px 5px #888888;
+}
+
+audio{
+    display : none;
+}

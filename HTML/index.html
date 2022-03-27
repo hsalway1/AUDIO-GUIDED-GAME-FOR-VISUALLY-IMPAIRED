@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    <link rel = "stylesheet" href = "../CSS/index.css">
+    <title>Directions</title>
+</head>
+<body">
+    <h1 style = "text-align: center;">WAY BACK HOME</h1>
+    <audio controls loop id = "background">
+        <source src = "../Audio/Directions/background.mp3" type = "audio/mp3">
+    </audio>
+
+    <!-- SEQUENCE ARROWS IMAGES -->
+    <img id = "sequence-up" src = "../Images/Directions/up-s.png" style = "display : none;">
+    <img id = "sequence-right" src = "../Images/Directions/right-s.png" style = "display : none;">
+    <img id = "sequence-left" src = "../Images/Directions/left-s.png" style = "display : none;">
+    <img id = "sequence-down" src = "../Images/Directions/down-s.png" style = "display : none;">
+
+    <!-- DIRECTION ARROWS IMAGES -->
+    <img id = "direction-up" src = "../Images/Directions/up-s.png" style = "display : none;">
+    <img id = "direction-right" src = "../Images/Directions/right-s.png" style = "display : none;">
+    <img id = "direction-left" src = "../Images/Directions/left-s.png" style = "display : none;">
+    <img id = "direction-down" src = "../Images/Directions/down-s.png" style = "display : none;">
+
+    <canvas id = "canvas"></canvas>
+
+</body>
+
+<script>
+    document.getElementById("canvas").click();
+    
+    document.querySelector("h1").onclick = function () {
+        let x = new Audio();
+        x.src = "../Audio/Directions/Zoe.mp3";
+        x.play();
+    }
+</script>
+<script type = "module" src = "../Javascript/gamearea.mjs"></script>
+<script type = "module" src = "../Javascript/index2.mjs"></script>
+
+</html>
